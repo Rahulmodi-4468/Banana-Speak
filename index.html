@@ -8,9 +8,45 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Banana Speak</h1>
-    <textarea id="txt-input" placeholder="Put your sentence in English here and we will convert in to banana" ></textarea>
-    <button id="btn-translate"> Translate</button> 
+    <div class="header">
+        <div class="header-div">
+            <img class="img"  src="/image/minions.png" alt="">
+        </div>
+        <div  class="header-div" style="flex-grow:6;">
+            <h1 > Banana Speak</h1>
+        </div>
+        <div class="header-div">
+            <img class="img"  src="/image/minions.png" alt="">
+        </div>
+    </div>
+    
+    <div class="grid-container">
+        <div class="row">
+            <div class="col-3 special">
+                <img src="/image/minion2.png" alt="">
+            </div>
+            <div class="col-6" style="text-align: center;">
+                <textarea id="txt-input" placeholder="Put your sentence in English here and we will convert in to banana" ></textarea>
+                <button id="btn-translate"> Translate</button> 
+                
+               <!-- <div style="font-size: larger;padding-top:1rem;">out put will come here</div>
+            --><div id="output">out put will come here</div>
+            </div>
+            <div class="col-3 special">
+                <img src="/image/minion2.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-header">Connect with me</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/RahulModi4468"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+            <li class="list-item-inline"><a class="link" href="http://github.com/Rahulmodi-4468"><i class="fab fa-github-square fa-2x" ></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/rahul-modi-4468rh/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+        </ul>
+    </footer>
+
     <script src="/js/app.js"></script>
 </body>
 </html>
