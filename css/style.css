@@ -1,45 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
 
+:root{
+    --primary-color:#000080;
+    --secondary-color:#f3f716;
+}
 body{
-  
+    color:var(--secondary-color);
     font-family:'Gluten', cursive;
     position: relative;
-  
     margin: 0;
 }
 textarea{
+    color: var(--secondary-color);
+    font-family: 'Gluten',cursive;
     width: 80%;
     height: 10vh;
     display: block;
     margin: 1rem;
     padding: 1rem;
-    background-color: rgb(239, 245, 154);
+    background-color: var(--primary-color);
+    text-align: center;
+    border: 5px solid var(--secondary-color);
+}
+::placeholder {
+    color: var(--secondary-color);
+    opacity: 1; /* Firefox */
+    font-size: large;
 }
 #output{
-    border: 1px solid black;
+    border: 1px solid var(--secondary-color);
     height: 10vh;
     width: 80%;
     margin: 1rem;
     padding: 1rem;
-    background-color: rgb(239, 245, 154);
+    background-color: var(--primary-color);
 }
 #btn-translate{
-    background-color: rgb(239, 245, 154);
+    background-color: var(--primary-color);
     border: none;
     padding: 1rem;
     border-radius: 0.5rem;
     font-family: 'Gluten',cursive;
     transition: 0.3s;
+    color: var(--secondary-color);
     font-size: larger;
 }
 #btn-translate:hover{
-    background-color: rgb(241, 255, 45);
-    
+    background-color: var(--secondary-color);
     font-family: 'Gluten',cursive;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
 }
 .header{
     align-items: center;
-    background-color: rgb(241, 255, 45);
+    background-color: var(--primary-color);
     letter-spacing: 0.4rem;
     font-size: large;
     display: flex ;
@@ -50,7 +64,7 @@ textarea{
     align-items: center;
     padding: 0.3rem 0.3rem;
 }
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:800px) {
     /* Mobile View*/
     .header{
         font-size:small;
@@ -62,19 +76,10 @@ textarea{
         visibility: hidden;
     }
     #btn-translate{
-        background-color: rgb(241, 255, 45);
+        background-color: var(--primary-color);
         font-family: 'Gluten',cursive;
     }
-    body{
-        background-image: url(/image/minion2.png);
-        font-family:'Gluten', cursive;
-        position: relative;
-        background-position: center;
-        background-repeat: space;
-        background-size: 50px auto;
-        margin: 0;
-        padding: 0;
-    }
+  
 }
 
 .img{
@@ -111,13 +116,11 @@ textarea{
     width: 100%;
     padding-top: 2rem;
     text-align: center;
-    color: black;
+    color: var(--secondary-color);
     clear: both;
-    border-top-left-radius:1rem ;
-    border-bottom-right-radius:1rem ;
     position: fixed;
     height: 100px;
-    background-color: rgb(241, 255, 45);
+    background-color: var(--primary-color);
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -125,7 +128,7 @@ textarea{
 }
 
 .footer .link{
-    color: black;
+    color: var(--secondary-color);
 }
 .footer .footer-header{
     font-weight: bold;
