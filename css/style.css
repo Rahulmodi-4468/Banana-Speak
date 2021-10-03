@@ -1,39 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
 
 :root{
-    --primary-color:#000080;
-    --secondary-color:#f3f716;
+    --primary-color:#1f2937;
+    --secondary-color:yellow;
 }
 body{
     color:var(--secondary-color);
     font-family:'Gluten', cursive;
     position: relative;
+    background-color: white;
     margin: 0;
 }
 textarea{
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-family: 'Gluten',cursive;
     width: 80%;
     height: 10vh;
     display: block;
+    font-size: large;
+    background-color: #eceff3;
+    
     margin: 1rem;
     padding: 1rem;
-    background-color: var(--primary-color);
     text-align: center;
-    border: 5px solid var(--secondary-color);
+    border: 5px solid var(--primary-color);
 }
 ::placeholder {
-    color: var(--secondary-color);
-    opacity: 1; /* Firefox */
+    color: var(--primary-color);
+    opacity: 0.5; 
     font-size: large;
 }
 #output{
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
     height: 10vh;
     width: 80%;
     margin: 1rem;
     padding: 1rem;
-    background-color: var(--primary-color);
 }
 #btn-translate{
     background-color: var(--primary-color);
@@ -64,6 +67,10 @@ textarea{
     align-items: center;
     padding: 0.3rem 0.3rem;
 }
+.img-div{
+    visibility: hidden;
+    display: none;
+}
 @media only screen and (max-width:800px) {
     /* Mobile View*/
     .header{
@@ -74,6 +81,13 @@ textarea{
     }
     .special{
         visibility: hidden;
+    }
+    .img-div{
+        visibility: visible;
+        padding-top: 10px;
+        text-align: center;
+        height: 200px ;
+        display: block;
     }
     #btn-translate{
         background-color: var(--primary-color);
@@ -86,7 +100,9 @@ textarea{
     width: 100px;
 }
 
+
 .grid-container{
+    
     padding-top: 2rem;
     margin: auto;
     width: 100%;
@@ -113,27 +129,35 @@ textarea{
 }
 
 .footer{
-    width: 100%;
-    padding-top: 2rem;
-    text-align: center;
-    color: var(--secondary-color);
-    clear: both;
-    position: fixed;
-    height: 100px;
     background-color: var(--primary-color);
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
+    color: yellow;
+    font-weight: 400;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 17px;
+    text-align: center;
+    display: block;
 }
 
-.footer .link{
-    color: var(--secondary-color);
-}
 .footer .footer-header{
     font-weight: bold;
     font-size: x-large;
 }
 .footer ul{
     padding-inline-start: 0px;
+}
+.list-non-bullet{
+    list-style: none;
+}
+.link{
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    margin: 1rem 0rem;
+    color:white;
+}
+
+.list-item-inline{
+    display: inline-block;
 }
