@@ -11,6 +11,7 @@ body{
     background-color: white;
     margin: 0;
 }
+/**  Input Area**/
 textarea{
     color: var(--primary-color);
     font-family: 'Gluten',cursive;
@@ -38,6 +39,8 @@ textarea{
     margin: 1rem;
     padding: 1rem;
 }
+
+/**  Button **/
 #btn-translate{
     background-color: var(--primary-color);
     border: none;
@@ -54,6 +57,10 @@ textarea{
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
 }
+
+
+
+/**  Header **/
 .header{
     align-items: center;
     background-color: var(--primary-color);
@@ -67,10 +74,16 @@ textarea{
     align-items: center;
     padding: 0.3rem 0.3rem;
 }
+.img{
+    width: 100px;
+}
 .img-div{
     visibility: hidden;
     display: none;
 }
+
+
+/** Media For Mobile View**/
 @media only screen and (max-width:800px) {
     /* Mobile View*/
     .header{
@@ -96,13 +109,10 @@ textarea{
   
 }
 
-.img{
-    width: 100px;
-}
 
-
+/**Main Body**/
 .grid-container{
-    
+    justify-content: center;
     padding-top: 2rem;
     margin: auto;
     width: 100%;
@@ -128,6 +138,10 @@ textarea{
     float: left;
 }
 
+
+
+
+/** Footer **/
 .footer{
     background-color: var(--primary-color);
     color: yellow;
